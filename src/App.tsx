@@ -1,16 +1,22 @@
-import { LoginPage } from "./pages/loginpage/page"
+import {  Routes, Route } from "react-router-dom";
+import { LoginPage } from "./pages/loginpage/page";
+import { DashboardPage } from "./pages/dashboard/page";
 
 function App() {
-  
-
   return (
-  <>     
-  <div>
-    <LoginPage/>
-   </div>
-   </>
+    <>
+      <main>
+        <div>
+        
+        </div>
 
-  )
+        <Routes>
+          <Route path="/" element={ <LoginPage />}/>
+          <Route path="/dashboard" element={<DashboardPage />} />
+        </Routes>
+      </main>
+    </>
+  );
 }
 
-export default App
+export default App;
