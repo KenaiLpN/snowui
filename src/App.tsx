@@ -1,10 +1,15 @@
+import { LoginPage } from "./pages/loginpage/page"
+
 function App() {
   
 
   return (
-    <>
-  <div>teste</div>
-    </>
+  <>     
+  <div>
+    <LoginPage/>
+   </div>
+   </>
+
   )
 }
 
