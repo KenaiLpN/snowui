@@ -22,7 +22,7 @@ export function LoginPage(){
              />
 
             <div className="flex flex-col gap-1 items-center">
-            <NavLink to="/dashboard" className="bg-blue-500 w-50 h-8 rounded text-white font-bold hover:bg-blue-600 text-center">Login</NavLink>
+            <NavLink to="/overview" className="bg-blue-500 w-50 h-8 rounded text-white font-bold hover:bg-blue-600 text-center">Login</NavLink>
             <span className="text-[#44B7FF] hover:text-white">Esqueceu a senha?</span>
             </div>
         </div>
