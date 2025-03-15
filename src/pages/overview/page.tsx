@@ -1,20 +1,13 @@
-
-
-import { NavBar } from "@/components/navbar/navbar"
+import { TopBar } from "@/components/topbar/topbar";
+import { Button } from "@/components/ui/button";
 
 
 export function OverviewPage(){
     return(
-    <>   
-  
-         <div className="bg-black w-50 h-10 ">
-             <div className="text-black p-50"></div>
-            
-        </div>
-        
-
-
-        </>
-
+   
+    <header>
+      <TopBar/>
+    </header>
+   
     )
 }

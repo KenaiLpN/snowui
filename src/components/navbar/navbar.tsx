@@ -14,9 +14,9 @@ export function NavBar(){
 return(
 
 
-<>
+
     <nav className="flex flex-col bg-[#2A2A2A] w-80 h-screen gap-3 items-center">
-             <img src={ImgNavBar} alt="" className="bg-[#2A2A2A] m-3 w-50"/>
+             <img src={ImgNavBar} alt="" className="bg-[#2A2A2A] m-3 mt-10 w-50"/>
        
         <div className="flex flex-col items-center ">
             <NavLink className={({isActive}) => `${baseLinkClass} ${isActive ? active : inactive}`} to="/overview"><div className={buttonicon}><CircleGauge/></div>Overview</NavLink>        
@@ -34,7 +34,7 @@ return(
         </div>
     </nav>
     
-</>
+
 )
 }
 

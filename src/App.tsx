@@ -3,6 +3,7 @@ import { LoginPage } from "./pages/loginpage/page";
 import { OverviewPage } from "./pages/overview/page";
 import { EcommercePage } from "./pages/ecommerce/page";
 import { NavBar } from "./components/navbar/navbar";
+import { DashboardPage } from "./pages/dashboard/page";
 
 
 
@@ -12,17 +13,20 @@ function App() {
 
  return (
     <div className={isLoginPage ? "w-full h-full" : "flex h-screen"}>
+      
       {!isLoginPage && (
-        <aside className="fixed top-0 left-0 w-90">
+        <aside className="fixed left-0 top-0 w-90">
           <NavBar />
         </aside>
+        
       )}
 
-      <main className={isLoginPage ? "" : "flex-1"}>
+      <main className={isLoginPage ? "" : "flex-1 bg-[#2A2A2A]"} >
      <Routes>
           <Route path="/" element={ <LoginPage />}/>
          <Route path="/overview" element={<OverviewPage />} />
          <Route path="/ecommerce" element={<EcommercePage/>}/>
+         <Route path="/dashboard" element={<DashboardPage/>}/>
         </Routes>
       </main>
     </div>
