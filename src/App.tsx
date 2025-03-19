@@ -21,7 +21,7 @@ function App() {
         
       )}
 
-      <main className={isLoginPage ? "" : "flex-1 bg-[#2A2A2A]"} >
+      <main className={isLoginPage ? "" : "flex-1 bg-[#2A2A2A] w-screen"} >
      <Routes>
           <Route path="/" element={ <LoginPage />}/>
          <Route path="/overview" element={<OverviewPage />} />
