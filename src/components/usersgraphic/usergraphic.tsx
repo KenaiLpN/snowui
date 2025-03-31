@@ -27,8 +27,14 @@ const chartConfig = {
 export function UsersGraphic() {
   return (
     <div className="w-100 rounded-2xl bg-[#383838]">
-    <ChartContainer config={chartConfig} className="min-h-[50px] h-50 w-100">
-      <BarChart accessibilityLayer data={chartData}>
+       <CardHeader > 
+        <CardTitle>Line Chart</CardTitle>
+        
+      </CardHeader>
+    <ChartContainer config={chartConfig} className="min-h-[50px] h-60 w-100">
+      
+     <BarChart accessibilityLayer data={chartData}>
+      
       
       <XAxis
       dataKey="month"
