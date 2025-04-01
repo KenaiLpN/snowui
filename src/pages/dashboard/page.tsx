@@ -1,7 +1,9 @@
 import { CountingCardBlue } from "@/components/coutingcards/countingcard";
 import { TopBar } from "@/components/topbar/topbar";
-import { LineGraphic } from "@/components/usersgraphic/linegraphic";
+import { StyledLineChart } from "@/components/usersgraphic/linegraphic";
 import { UsersGraphic } from "@/components/usersgraphic/usergraphic";
+import { UsersGraphicTwo } from "@/components/usersgraphic/usergraphictwo";
+
 
 
 export function DashboardPage(){
@@ -10,17 +12,24 @@ export function DashboardPage(){
         <header>
           <TopBar/>
         </header>
-         <div className="flex ml-90 gap-5">
-          <CountingCardBlue/>
-          <CountingCardBlue/>
-          <CountingCardBlue/>
-          <CountingCardBlue/>
-         </div>
-         <div className="w-375 ml-90 mt-10  space-y-6">
+    <div className="space-y-5">
+      <div className="flex ml-80 gap-7">
+        <CountingCardBlue/>
+        <CountingCardBlue/>
+        <CountingCardBlue/>
+        <CountingCardBlue/>
+      </div>
+      <div className="w-375 ml-80">
+        <StyledLineChart/>
+      </div>
+      <div className="flex ml-80 justify-between w-340">
+        <UsersGraphic/>
+        <UsersGraphicTwo/>
        
-          <LineGraphic/>
+      </div>
+    </div>
        
-         </div>
+       
       
          
     </div>
