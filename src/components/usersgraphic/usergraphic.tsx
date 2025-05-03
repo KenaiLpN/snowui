@@ -1,11 +1,7 @@
 "use client";
 import { BarChart, Bar, XAxis, Tooltip } from "recharts";
 import { CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  ChartConfig,
-  ChartContainer,
-  
-} from "@/components/ui/chart";
+import { ChartConfig, ChartContainer } from "@/components/ui/chart";
 import { useState } from "react";
 
 interface CustomBarProps {
